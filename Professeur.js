@@ -16,13 +16,17 @@ class EmployeUniversite {
     }
 
     augmenterAnciennete() {
-        this.anneesExperience++;
+        this.anneesExperience++; 
     }
 
     nomComplet() {
         return this.prenom + ", " + this.nom;
     }
-
+    information() {
+        return this.numeroEmploye + " - "
+            + this.nomComplet() +
+            " - Ancienneté: " + this.anneesExperience;
+    }
 }
 /**
  * Cette classe représente un professeur d'une Université
@@ -52,6 +56,7 @@ console.log(prof.nomComplet());
 console.log(prof.anneesExperience);
 console.log(prof.salaire);
 console.log(prof.coursEnseigne);
+console.log(prof.information()); 
 
 prof.ajouterUnCours('2RP');
 console.log(prof.coursEnseigne);
