@@ -62,3 +62,5 @@ prof.ajouterUnCours('2RP');
 console.log(prof.coursEnseigne);
 prof.ajouterUnCours('CG2');
 console.log(prof.coursEnseigne);
+console.log("Test:::")
+console.log(prof.coursEnseigne[1])
